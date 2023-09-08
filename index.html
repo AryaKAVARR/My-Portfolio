@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name = "author" content = "Arya">
-    <link rel="stylesheet" href="public/main.css">
+    <link rel="stylesheet" href="/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <!--Header CSS-->
@@ -81,7 +81,7 @@
                 <span style="font-size: 20pt;"> - Programmer and Web developer.</span>
             </h1>
             <div class="image">
-                <img src="external/arya.jpg" alt="Arya Image"> 
+                <img src="/images/arya.jpg" alt="Arya Image"> 
             </div>
         </div>
       </header>
@@ -162,7 +162,7 @@
                   <div class="swiper-slide">
                     <div class="services-block">
                       <div class="service-icon">
-                        <img src="./external/python-logo.png">
+                        <img src="/images/python-logo.png">
                       </div>
                       <div class="service-content">
                         <span>Python</span>
@@ -175,7 +175,7 @@
                   <div class="swiper-slide">
                     <div class="services-block">
                       <div class="service-icon">
-                        <img src="./external/C_Logo.png">
+                        <img src="/images/C_Logo.png">
                       </div>
                       <div class="service-content">
                         <span>C</span>
@@ -188,7 +188,7 @@
                   <div class="swiper-slide">
                     <div class="services-block">
                       <div class="service-icon">
-                        <img src="./external/C++.jpg">
+                        <img src="/images/C++.jpg">
                       </div>
                       <div class="service-content">
                         <span>C++</span>
@@ -201,7 +201,7 @@
                   <div class="swiper-slide">
                     <div class="services-block">
                       <div class="service-icon">
-                        <img src="./external/JavaScript-Symbol.png">
+                        <img src="/images/JavaScript-Symbol.png">
                       </div>
                       <div class="service-content">
                         <span>Javascript</span>
@@ -214,7 +214,7 @@
                   <div class="swiper-slide">
                     <div class="services-block">
                       <div class="service-icon">
-                        <img src="./external/HTML.jpeg">
+                        <img src="/images/HTML.jpeg">
                       </div>
                       <div class="service-content">
                         <span>HTML</span>
@@ -227,7 +227,7 @@
                   <div class="swiper-slide">
                     <div class="services-block">
                       <div class="service-icon">
-                        <img src="./external/CSS.png">
+                        <img src="/images/CSS.png">
                       </div>
                       <div class="service-content">
                         <span>CSS</span>
@@ -240,7 +240,7 @@
                   <div class="swiper-slide">
                     <div class="services-block">
                       <div class="service-icon">
-                        <img src="./external/reactJs.png">
+                        <img src="/images/reactJs.png">
                       </div>
                       <div class="service-content">
                         <span>ReactJS</span>
@@ -253,7 +253,7 @@
                   <div class="swiper-slide">
                     <div class="services-block">
                       <div class="service-icon">
-                        <img src="./external/sql.png">
+                        <img src="/images/sql.png">
                       </div>
                       <div class="service-content">
                         <span>SQL</span>
@@ -266,7 +266,7 @@
                   <div class="swiper-slide">
                     <div class="services-block">
                       <div class="service-icon">
-                        <img src="./external/JAVA.png">
+                        <img src="/images/JAVA.png">
                       </div>
                       <div class="service-content">
                         <span>JAVA</span>
@@ -279,7 +279,7 @@
                   <div class="swiper-slide">
                     <div class="services-block">
                       <div class="service-icon">
-                        <img src="./external/github.png">
+                        <img src="/images/github.png">
                       </div>
                       <div class="service-content">
                         <span>Github</span>
@@ -292,7 +292,7 @@
                   <div class="swiper-slide">
                     <div class="services-block">
                       <div class="service-icon">
-                        <img src="./external/mongoDb.png">
+                        <img src="/images/mongoDb.png">
                       </div>
                       <div class="service-content">
                         <span>Mongo DB</span>
@@ -315,38 +315,59 @@
               <div class="portfolio-grid">
                 <div class="portfolio-item">
                   <div class="portfolio-img">
-                    <img src="external/prj1.png" alt="Project 1">
+                    <img src="/images/prj1.png" alt="Project 1">
                     <div class="overlay">
-                      <a href="./public/LuxuaryBrand/Luxury Brands.html" class="btn-details">Visit</a>
+                      <a href="#" class="btn-details" id="local-link">Visit</a>
                     </div>
                   </div>
                   <h3>Project 1</h3>
                   <p>This is <b>"Luxuary Brands"</b> website which includes inline styles define the appearance of the header, navigation, main content, and body. The header displays the store name and a brief tagline. The navigation menu (id: "category-menu") is intended for dynamic category buttons. The main section features placeholders for category titles and product listings. JavaScript files for handling categories, products, and the main application logic are referenced. In summary, this template forms the basis for a dynamic luxury brand website with styling and content loaded dynamically using JavaScript.</p>
                 </div>
+                <script>
+                  document.getElementById('local-link').addEventListener('click', function(event) {
+                    event.preventDefault();
+                    const filePath = 'LuxuaryBrand/Luxury Brands.html'; 
+                    window.location.href = filePath;
+                  });
+                  </script>
                 <div class="portfolio-item">
                   <div class="portfolio-img">
-                    <img src="external/Taj-Mahal.jpg" alt="Project 2">
+                    <img src="/images/Taj-Mahal.jpg" alt="Project 2">
                     <div class="overlay">
-                      <a href="./public/TajMahal/index-taj.html" class="btn-details">Visit</a>
+                      <a href="#" class="btn-details" id="local-link2">Visit</a>
                     </div>
-                  </div>
+                  </div>                    
                   <h3>Project 2</h3>
                   <p><b>"The Taj Mahal - One of The 7 Wonders"</b>
                     Explore the Taj Mahal's rich history, stunning architecture, and lush gardens on our website. Learn about its origins as a symbol of love, its architectural grandeur, and the significance of its captivating garden. Plan your visit with helpful tourism information and discover informative videos. We offer a comprehensive resource to deepen your appreciation of this iconic monument..</p>
                 </div>
+                <script>
+                  document.getElementById('local-link2').addEventListener('click', function(event) {
+                    event.preventDefault();
+                    const filePath = 'TajMahal/index-taj.html'; 
+                    window.location.href = filePath;
+                  });
+                  </script>
                 <div class="portfolio-item">
                   <div class="portfolio-img">
-                    <img src="external/Blog_img.jpg" alt="Project 3">
+                    <img src="/images/Blog_img.jpg" alt="Project 3">
                     <div class="overlay">
-                      <a href="./public/oldBlog/index.html" class="btn-details">Visit</a>
+                      <a href="#" class="btn-details" id="local-link3">Visit</a>
                     </div>
                   </div>
                   <h3>Project 3</h3>
                   <p>This is my old blog webiste which I created in my second semester. This website was just my get to know with HTML, CSS, Javascript.</p>
                 </div>
+                <script>
+                  document.getElementById('local-link3').addEventListener('click', function(event) {
+                    event.preventDefault();
+                    const filePath = 'oldBlog/index.html'; 
+                    window.location.href = filePath;
+                  });
+                  </script>
                 <div class="portfolio-item">
                   <div class="portfolio-img">
-                    <img src="external/prj.jpg" alt="Project 4">
+                    <img src="/images/prj.jpg" alt="Project 4">
                     <div class="overlay">
                       <a href="https://attractive-fox-fashion.cyclic.app" class="btn-details">Visit</a>
                     </div>
@@ -356,7 +377,7 @@
                 </div>
                 <div class="portfolio-item">
                   <div class="portfolio-img">
-                    <img src="external/pythonautomation.png" alt="Project 5">
+                    <img src="/images/pythonautomation.png" alt="Project 5">
                     <div class="overlay">
                       <a href="https://github.com/AryaKAVARR/Python-excel__automation" class="btn-details">Visit</a>
                     </div>
@@ -366,7 +387,7 @@
                 </div>
                 <div class="portfolio-item">
                   <div class="portfolio-img">
-                    <img src="./external/Network-chat.jpg" alt="Project 6">
+                    <img src="/images/Network-chat.jpg" alt="Project 6">
                     <div class="overlay">
                       <a href="https://github.com/AryaKAVARR/Network_Chat_Application" class="btn-details">Visit</a>
                     </div>

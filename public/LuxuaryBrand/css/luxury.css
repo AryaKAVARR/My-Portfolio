@@ -1,0 +1,26 @@
+/**
+ * Override any styles here that you want to change (optional)...
+ */
+button {
+  margin-left: 100px;
+  margin-right: 100px;
+  color: black;
+  background: rgb(135, 135, 71);
+  border-radius: 23px;
+}
+
+.products {
+  background-color: whitesmoke;
+  display: inline-block;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 20px;
+}
+
+.products {
+  background-color: wheat;
+  display: grid;
+  grid-template-rows: auto;
+}
+body {
+  background-color: wheat;
+}
